@@ -558,7 +558,6 @@ public class mainForm extends JFrame
                             System.out.println("Flagged Neighbors: " + flaggedNeighbors);
                             System.out.println("Simultaneous click successful");
                         }
-
                     }
 
                     @Override
@@ -589,9 +588,9 @@ public class mainForm extends JFrame
 
                         // prepare special icons
                         ImageIcon FlagIcon;
-                        FlagIcon = new ImageIcon("C://Users/Joseph/Downloads/GitHub/Outside/2013/Minesweeper/src/Images/FlagImage.png");
+                        FlagIcon = new ImageIcon("C://Users/Joseph/Downloads/GitHub/Minesweeper/src/Images/FlagImage.png");
                         ImageIcon MineIcon;
-                        MineIcon = new ImageIcon("C://Users/Joseph/Downloads/GitHub/Outside/2013/Minesweeper/src/Images/MineImage.png");
+                        MineIcon = new ImageIcon("C://Users/Joseph/Downloads/GitHub/Minesweeper/src/Images/MineImage.png");
 
                         // prepare resize
                         Image MineImage = MineIcon.getImage(); // transform it
@@ -876,7 +875,7 @@ public class mainForm extends JFrame
 
                     ImageIcon MineIcon;
                     MineIcon = new ImageIcon("C://Users/Joseph/Downloads/GitHub/"
-                            + "Outside/2013/Minesweeper/src/Images/MineImage.png");
+                            + "Minesweeper/src/Images/MineImage.png");
 
                     // prepare resize
                     Image MineImage = MineIcon.getImage(); // transform it
@@ -900,19 +899,6 @@ public class mainForm extends JFrame
             }
         }
 
-        /*
-        JOptionPane.showMessageDialog(rootPane, "You lose. Sorry."
-                + "\n╔╦╦╦╦╦╦╦╦╦╦╦╦╗"
-                + "\n╠╬╬╬╬╬╬╬╬╬╬╬╬╣"
-                + "\n╠╬╬╬╬╬╬╬╬╬╬╬╬╣"
-                + "\n╠╬╬█╬╬╬╬╬╬█╬╬╣"
-                + "\n╠╬╬╬╬╬╬╬╬╬╬╬╬╣"
-                + "\n╠╬╬╬╬╬╬╬╬╬╬╬╬╣"
-                + "\n╠╬╬╬╬╬╬╬╬╬╬╬╬╣"
-                + "\n╠╬██████████╬╣"
-                + "\n╠╬█╬╬╬╬╬╬╬╬█╬╣"
-                + "\n╚╩╩╩╩╩╩╩╩╩╩╩╩╝", "☹", JOptionPane.YES_NO_CANCEL_OPTION);
-                * */
         //Custom button text
         String[] options = {"Try again", "Go back to Start", "Quit"};
         int n = JOptionPane.showOptionDialog(rootPane, "You lose. Sorry."
@@ -935,7 +921,6 @@ public class mainForm extends JFrame
 
         if(n == 2)
         {
-            //System.out.println("n = " + n);
             System.exit(0);
         }
         else if(n == 1)
@@ -1017,7 +1002,6 @@ public class mainForm extends JFrame
                 }
             }
         }
-
         int[] coordinates = {y, x};
         return coordinates;
     }
@@ -1118,7 +1102,8 @@ public class mainForm extends JFrame
         // TODO add your handling code here:
         checkF2Key(evt);
         //checkTestCMD(evt);
-        System.out.println("Form detected a key press: " + evt.getKeyLocation() + ": " + evt.getKeyCode() + " - " + evt.getKeyChar());
+        System.out.println("Form detected a key press: " + evt.getKeyLocation()
+                + ": " + evt.getKeyCode() + " - " + evt.getKeyChar());
 
     }
 

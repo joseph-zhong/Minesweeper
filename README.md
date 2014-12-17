@@ -1,4 +1,4 @@
 Minesweeper
 ===========
 
-![alt tag](https://raw.github.com/Jaberer/Minesweeper/master/.png)
+![alt tag](https://raw.github.com/Jaberer/Minesweeper/master/MinesweeperMediumExample.PNG)

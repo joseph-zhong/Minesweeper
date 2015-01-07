@@ -588,9 +588,9 @@ public class mainForm extends JFrame
 
                         // prepare special icons
                         ImageIcon FlagIcon;
-                        FlagIcon = new ImageIcon("C://Users/Joseph/Downloads/GitHub/Minesweeper/src/Images/FlagImage.png");
+                        FlagIcon = new ImageIcon("Images/FlagImage.png");
                         ImageIcon MineIcon;
-                        MineIcon = new ImageIcon("C://Users/Joseph/Downloads/GitHub/Minesweeper/src/Images/MineImage.png");
+                        MineIcon = new ImageIcon("Images/MineImage.png");
 
                         // prepare resize
                         Image MineImage = MineIcon.getImage(); // transform it
